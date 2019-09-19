@@ -1,0 +1,9 @@
+select distinct (dept_manager.emp_no), 
+	employees.last_name,
+	employees.first_name,
+	dept_manager.from_date,
+	dept_manager.to_date
+from dept_manager
+	inner join employees
+	on dept_manager.emp_no =
+	employees.emp_no;

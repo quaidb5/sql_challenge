@@ -1,0 +1,12 @@
+select employees.emp_no,
+	employees.first_name,
+	employees.last_name,
+	departments.dept_name
+from dept_employee
+	inner join employees
+	on dept_employee.emp_no =
+	employees.emp_no
+	inner join departments
+	on departments.dept_no = 
+	dept_employee.dept_no
+	where departments.dept_name = 'Sales' or dept_name = 'Development'

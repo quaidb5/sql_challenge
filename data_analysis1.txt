@@ -1,0 +1,9 @@
+select distinct (employees.emp_no), 
+	employees.last_name,
+	employees.first_name, 
+	employees.gender,
+	salaries.salary
+from employees
+	inner join salaries
+	on employees.emp_no =
+	salaries.emp_no;
